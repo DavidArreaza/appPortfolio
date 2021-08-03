@@ -1,0 +1,23 @@
+@import '../styles.scss';
+
+/*.container-fluid{
+  background: linear-gradient(to right, black, rgb(114, 114, 114));
+}*/
+
+p{
+  color: $yellow;
+}
+
+.name{
+  font-size: 50px;
+}
+
+img{
+  max-width: 400px;
+  height: 400px;
+}
+
+.card{
+  width: 400px;
+}
+
