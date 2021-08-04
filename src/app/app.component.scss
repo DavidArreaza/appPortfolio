@@ -1,8 +1,23 @@
 @import '../styles.scss';
 
+
+@keyframes animation-text {
+  0% {margin-top: 250px}
+  100% {margin-top: 0px}
+}
 /*.container-fluid{
   background: linear-gradient(to right, black, rgb(114, 114, 114));
 }*/
+
+mat-stepper{
+  //background: linear-gradient(to right, black, rgb(114, 114, 114));
+  background: rgb(46, 46, 46);
+  //Para que la imagen no se repita y ocupe toda la pantalla
+  /*background-image: url('../assets/img/fondo2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;*/
+}
 
 p{
   color: $yellow;
@@ -21,3 +36,22 @@ img{
   width: 400px;
 }
 
+.card:hover{
+  cursor: pointer;
+}
+
+.card-text{
+  display: none;
+}
+
+.card:hover .card-text{
+  display: block;
+  animation-name: animation-text;
+  animation-duration: 1s;
+}
+
+.card-title{
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+}
