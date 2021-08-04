@@ -1,4 +1,4 @@
-<mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+<mat-stepper class="container-fluid" orientation="vertical" [linear]="isLinear" #stepper>
   <!-- Icon overrides -->
   <ng-template matStepperIcon="number">
     <button type="button" mat-mini-fab color="link"><mat-icon >format_align_center</mat-icon></button>
@@ -10,7 +10,7 @@
 
   <!-- Stepper -->
   <mat-step>
-    <ng-template matStepLabel state="about me">About me</ng-template>
+    <ng-template matStepLabel state="about me"><p>About me</p></ng-template>
     <div class="row text-center">
       <div class="col-12 mt-4">
         <p class="name mt-4">{{ nombre }}</p>
@@ -32,21 +32,17 @@
   </mat-step>
 
   <mat-step>
-    <ng-template matStepLabel state="projects">Projects</ng-template>
+    <ng-template matStepLabel state="projects"><p>Projects</p></ng-template>
     <p>Aqui iba algo</p>
     <div>
       <div class="row">
-        <div class="col-4">
+        <div class="col-4" *ngFor="let project of Projects">
           <div class="card border border-dark">
-            <img src="../assets/img/Captura.PNG" class="card-img" alt="..." />
+            <img src={{project.img}} class="card-img" alt="..." />
             <div class="card-img-overlay">
-              <p class="card-title">Card title</p>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">Last updated 3 mins ago</p>
+              <p class="card-title">{{project.name}}</p>
+              <p class="card-text">{{project.info}}</p>
+              <p class="card-text">{{project.description}}</p>
             </div>
           </div>
         </div>
@@ -60,7 +56,7 @@
   </mat-step>
 
   <mat-step>
-    <ng-template matStepLabel state="contact">Contact</ng-template>
+    <ng-template matStepLabel state="contact"><p>Contact</p></ng-template>
     <p>You are now done.</p>
     <div>
       <button mat-button matStepperPrevious>Back</button>
