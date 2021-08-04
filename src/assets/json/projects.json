@@ -1,0 +1,23 @@
+[
+    {
+        "name": "TableGames",
+        "info": "Proyecto final del curso de Desarrollo Front-end realizado en la EOI",
+        "description": "Web para anunciar partidas de juegos de mesa a las que otros jugadores pueden unirse y concretar día y lugar para jugar",
+        "url": "https://tablegames.vercel.app/home",
+        "img": "../assets/img/tablegame.PNG"
+    },
+    {
+        "name": "MyContacts",
+        "info": "Proyecto realizado con Angular y Firebase",
+        "description": "Agenda para guardar contactos.",
+        "url": "https://mycontacts-rho.vercel.app/",
+        "img": "../assets/img/Captura.PNG"
+    },
+    {
+        "name": "Portfolio",
+        "info": "Proyecto realizado con Angular",
+        "description": "Web personal para mostrar mi información y mis proyectos",
+        "url": "https://mycontacts-rho.vercel.app/",
+        "img": "../assets/img/Captura.PNG"
+    }
+]
