@@ -8,6 +8,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatStepperModule, MatAutocompleteModule, MatButtonModule, MatIconModule
+    MatStepperModule, MatAutocompleteModule, MatButtonModule, MatIconModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
