@@ -11,7 +11,7 @@
         "info": "Proyecto realizado con Angular y Firebase",
         "description": "Agenda para guardar contactos.",
         "url": "https://mycontacts-rho.vercel.app/",
-        "img": "../assets/img/Captura.PNG"
+        "img": "../assets/img/mycontacts.PNG"
     },
     {
         "name": "Portfolio",
