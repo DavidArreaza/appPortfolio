@@ -24,7 +24,19 @@ p{
 }
 
 .name{
+  font-family: 'Glasten Bold', arial;
   font-size: 50px;
+}
+
+.puesto{
+  font-size: 20px;
+}
+
+.description{
+  //border: solid whitesmoke 0.5px;
+  border-radius: 5px;
+  //box-shadow: 0.5px $shadowWhite;
+  box-shadow: 2px 1px 3px $shadowWhite;
 }
 
 img{
@@ -58,4 +70,11 @@ img{
 
 .next{
   margin-left: 95%;
+}
+
+.icons{
+  fa-icon{
+    font-size: 60px;
+    color: $shadowWhite;
+  }
 }
