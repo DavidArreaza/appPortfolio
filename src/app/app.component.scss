@@ -1,13 +1,16 @@
 @import '../styles.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @keyframes animation-text {
   0% {margin-top: 250px}
   100% {margin-top: 0px}
 }
-/*.container-fluid{
-  background: linear-gradient(to right, black, rgb(114, 114, 114));
-}*/
+
 
 mat-stepper{
   //background: linear-gradient(to right, black, rgb(114, 114, 114));
@@ -21,18 +24,25 @@ mat-stepper{
 
 p{
   color: $yellow;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
 }
 
 .name{
-  font-family: 'Glasten Bold', arial;
-  font-size: 50px;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-size: 70px;
 }
 
 .puesto{
+  margin-top: 50px;
+  //font-family: 'Poppins', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 20px;
 }
 
 .description{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
   //border: solid whitesmoke 0.5px;
   border-radius: 5px;
   //box-shadow: 0.5px $shadowWhite;
@@ -41,7 +51,7 @@ p{
 
 img{
   max-width: 400px;
-  height: 400px;
+  height: 300px;
 }
 
 .card{
@@ -52,8 +62,23 @@ img{
   cursor: pointer;
 }
 
+.card-title{
+  display: none;
+  color: black;
+  font-family: 'Unica One', cursive;
+  font-size: 35px;
+  font-weight: bold;
+}
+
 .card-text{
   display: none;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.card:hover .card-title{
+  display: block;
+  animation-name: animation-text;
+  animation-duration: 1s;
 }
 
 .card:hover .card-text{
@@ -62,19 +87,25 @@ img{
   animation-duration: 1s;
 }
 
-.card-title{
-  color: black;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.next{
-  margin-left: 95%;
-}
-
 .icons{
   fa-icon{
     font-size: 60px;
     color: $shadowWhite;
   }
+}
+
+.btnback{
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.btnnext{
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.margin{
+  margin-left: 95%;
 }
