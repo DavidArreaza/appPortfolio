@@ -14,7 +14,7 @@
     <div class="row text-center">
       <div class="col-12 my-4">
         <p class="name my-4">{{ nombre }}</p>
-        <p class="puesto mt-4">{{ puesto }}</p>
+        <p class="puesto">{{ puesto }}</p>
         <div class="row justify-content-center my-4">
           <div class="col-6">
             <p class="description px-2 py-2">
@@ -24,21 +24,15 @@
         </div>
       </div>
     </div>
-    <div>
-      <button type="button" class="btn btn-outline-light next shadow" matStepperNext>
-        <fa-icon [icon]="faArrowRight"></fa-icon>
-      </button>
-      <!--<button mat-button matStepperNext>Next</button>-->
-    </div>
+    <button class="margin" mat-button matStepperNext><fa-icon class="btnnext" [icon]="faArrowRight"></fa-icon></button>
   </mat-step>
 
   <mat-step>
     <ng-template matStepLabel state="projects"><p>Projects</p></ng-template>
-    <p>Aqui iba algo</p>
     <div>
       <div class="row">
         <div class="col-4 my-4" *ngFor="let project of Projects">
-          <div class="card border border-dark shadow">
+          <div class="card border border-dark" target="_blank">
             <img src={{project.img}} class="card-img" alt="..." />
             <div class="card-img-overlay">
               <p class="card-title">{{project.name}}</p>
@@ -49,14 +43,13 @@
         </div>
       </div>
 
-      <button type="button" class="btn btn-outline-light back shadow" matStepperPrevious>
-        <fa-icon [icon]="faArrowLeft"></fa-icon>
-      </button>
-      <button type="button" class="btn btn-outline-light next shadow" matStepperNext>
-        <fa-icon [icon]="faArrowRight"></fa-icon>
-      </button>
+      <div>
+        <button mat-button matStepperPrevious><fa-icon class="btnback" [icon]="faArrowLeft"></fa-icon></button>
+        <button class="margin" mat-button matStepperNext><fa-icon class="btnnext" [icon]="faArrowRight"></fa-icon></button>
         <!-- <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button> -->
+      </div>
+
     </div>
   </mat-step>
 
@@ -65,15 +58,11 @@
     <div class="row icons">
       <div class="col-3 text-center" *ngFor="let icon of icons">
         <fa-icon [icon]="icon.icon"></fa-icon><br>
-        <a href="{{icon.url}}" class="my-4" target="_blank">{{icon.name}}</a>
+        <a href="{{icon.url}}" class="link my-4" target="_blank">{{icon.name}}</a>
       </div>
     </div>
-    <div>
-      <button type="button" class="btn btn-outline-light back shadow my-4" matStepperPrevious>
-        <fa-icon [icon]="faArrowLeft"></fa-icon>
-      </button>
-      <!--<button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button> -->
+    <div class="container-button-back my-4">
+      <button mat-button matStepperPrevious><fa-icon class="btnback" [icon]="faArrowLeft"></fa-icon></button>
     </div>
   </mat-step>
 </mat-stepper>
