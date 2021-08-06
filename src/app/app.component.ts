@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
   title = 'Portfolio';
   isLinear = false;
 
-  nombre = 'David Arreaza Gil';
+  nombre = 'DAVID ARREAZA GIL';
   puesto = 'Desarrollador Front-end junior y Técnico en Desarrolo de Aplicaciones Multiplataforma';
   description = '¡Hola! Mi nombre es David. Empecé en el mundo de la programación porque siempre me pregunté que había detrás de un botón. Estudié el CFGS de Desarrollo de Aplicaciones Multiplaforma en el que aprendí Java, C#, Android, HTML, SQL entre otras muchas cosas más. Tambíen, realicé un curson de Desarrollo Front-end con Angular impartido por la Escuela de Organización Industrial (EOI). Trabajar en este sector hace que mi interés por la programación aumente con cada nuevo conocimiento que adquiero. Deseo participar en nuevos proyectos y enfrentarme a nuevos desafios, por lo que si buscas a alguien para ello, no dudes en contactar conmigo.';
 
