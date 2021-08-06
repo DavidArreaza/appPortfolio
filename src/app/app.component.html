@@ -14,13 +14,11 @@
     <div class="row text-center">
       <div class="col-12 my-4">
         <p class="name my-4">{{ nombre }}</p>
-        <div class="row justify-content-center mt-4">
-          <div class="col-6 mt-4">
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente aliquam, nobis odit fugiat veritatis ipsa id
-              blanditiis alias quod consequatur, dolorum non, repudiandae aut
-              temporibus ipsam adipisci aspernatur. Ut?
+        <p class="puesto mt-4">{{ puesto }}</p>
+        <div class="row justify-content-center my-4">
+          <div class="col-6">
+            <p class="description px-2 py-2">
+              {{ description }}
             </p>
           </div>
         </div>
@@ -64,9 +62,14 @@
 
   <mat-step>
     <ng-template matStepLabel state="contact"><p>Contact</p></ng-template>
-    <p>You are now done.</p>
+    <div class="row icons">
+      <div class="col-3 text-center" *ngFor="let icon of icons">
+        <fa-icon [icon]="icon.icon"></fa-icon><br>
+        <a href="{{icon.url}}" class="my-4" target="_blank">{{icon.name}}</a>
+      </div>
+    </div>
     <div>
-      <button type="button" class="btn btn-outline-light back shadow" matStepperPrevious>
+      <button type="button" class="btn btn-outline-light back shadow my-4" matStepperPrevious>
         <fa-icon [icon]="faArrowLeft"></fa-icon>
       </button>
       <!--<button mat-button matStepperPrevious>Back</button>
