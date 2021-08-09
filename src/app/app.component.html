@@ -31,23 +31,26 @@
     <ng-template matStepLabel state="projects"><p>Projects</p></ng-template>
     <div>
       <div class="row">
-        <div class="col-4 my-4" *ngFor="let project of Projects">
-          <div class="card border border-dark" target="_blank">
-            <img src={{project.img}} class="card-img" alt="..." />
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12  my-4" *ngFor="let project of Projects">
+          <div class="card border border-dark" >
+            <img src={{project.img}} class="card-img" alt="img" />
             <div class="card-img-overlay">
               <p class="card-title">{{project.name}}</p>
               <p class="card-text">{{project.info}}</p>
               <p class="card-text">{{project.description}}</p>
+              <a class="card-text link" href="{{project.url}}" target="_blank">Visitalo aquí</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div>
-        <button mat-button matStepperPrevious><fa-icon class="btnback" [icon]="faArrowLeft"></fa-icon></button>
-        <button class="margin" mat-button matStepperNext><fa-icon class="btnnext" [icon]="faArrowRight"></fa-icon></button>
-        <!-- <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button> -->
+      <div class="row justify-content-between">
+        <div class="col-6 text-start">
+          <button mat-button matStepperPrevious><fa-icon class="btnback" [icon]="faArrowLeft"></fa-icon></button>
+        </div>
+        <div class="col-6 text-end">
+          <button mat-button matStepperNext><fa-icon class="btnnext" [icon]="faArrowRight"></fa-icon></button>
+        </div>
       </div>
 
     </div>
@@ -56,7 +59,7 @@
   <mat-step>
     <ng-template matStepLabel state="contact"><p>Contact</p></ng-template>
     <div class="row icons">
-      <div class="col-3 text-center" *ngFor="let icon of icons">
+      <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3" *ngFor="let icon of icons">
         <fa-icon [icon]="icon.icon"></fa-icon><br>
         <a href="{{icon.url}}" class="link my-4" target="_blank">{{icon.name}}</a>
       </div>
@@ -69,7 +72,7 @@
 
 <footer class="cont border-top border-warning bg-dark text-center">
   <div class="copyright text-center p-3">
-    © 2020 Copyright:
+    © 2021 Copyright:
     <a href="https://github.com/DavidArreaza">David Arreaza Gil</a>
   </div>
 </footer>
