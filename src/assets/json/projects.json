@@ -17,7 +17,7 @@
         "name": "Portfolio",
         "info": "Proyecto realizado con Angular",
         "description": "Web personal para mostrar mi información y mis proyectos",
-        "url": "https://mycontacts-rho.vercel.app/",
+        "url": "https://portfolio-dag.vercel.app/",
         "img": "../assets/img/portfolio.PNG"
     }
 ]
