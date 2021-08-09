@@ -7,14 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @keyframes animation-text {
-  0% {margin-top: 250px}
+  0% {margin-top: 100px}
   100% {margin-top: 0px}
 }
 
 
 mat-stepper{
-  //background: linear-gradient(to right, black, rgb(114, 114, 114));
-  background: rgb(46, 46, 46);
+  height: 100%;
+  background: $grey;
   //Para que la imagen no se repita y ocupe toda la pantalla
   /*background-image: url('../assets/img/fondo2.jpg');
   background-repeat: no-repeat;
@@ -35,7 +35,6 @@ p{
 
 .puesto{
   margin-top: 50px;
-  //font-family: 'Poppins', sans-serif;
   font-family: 'Bebas Neue', cursive;
   font-size: 20px;
 }
@@ -43,9 +42,7 @@ p{
 .description{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  //border: solid whitesmoke 0.5px;
   border-radius: 5px;
-  //box-shadow: 0.5px $shadowWhite;
   box-shadow: 2px 1px 3px $shadowWhite;
 }
 
@@ -58,13 +55,15 @@ img{
   width: 400px;
 }
 
-.card:hover{
-  cursor: pointer;
+.card-img-overlay:hover{
+  animation-name: animation-text;
+  animation-duration: 0.1s;
+  background: rgb(0, 0, 0, 0.6);
 }
 
 .card-title{
   display: none;
-  color: black;
+  color: whitesmoke;
   font-family: 'Unica One', cursive;
   font-size: 35px;
   font-weight: bold;
@@ -108,4 +107,15 @@ img{
 
 .margin{
   margin-left: 95%;
+}
+
+.cont{
+  position: relative;
+  margin-top: 25px;
+  bottom: 0px;
+}
+
+.copyright{
+  color: $yellow;
+  background-color: $grey;
 }
