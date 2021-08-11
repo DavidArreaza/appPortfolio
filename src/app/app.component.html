@@ -58,10 +58,11 @@
 
   <mat-step>
     <ng-template matStepLabel state="contact"><p>Contact</p></ng-template>
-    <div class="row icons">
-      <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-3" *ngFor="let icon of icons">
-        <fa-icon [icon]="icon.icon"></fa-icon><br>
-        <a href="{{icon.url}}" class="link my-4" target="_blank">{{icon.name}}</a>
+    <div class="row icons my-4">
+      <div class="col-lg-3 col-sm-6 col-xs-6 text-center my-4" *ngFor="let icon of icons">
+        <div class="my-4"><fa-icon [icon]="icon.icon"></fa-icon></div>
+        <p *ngIf="icon.name == 'E-mail'" class="link" target="_blank">{{icon.email}}</p>
+        <a *ngIf="icon.name != 'E-mail'" href="{{icon.url}}" class="link" target="_blank">{{icon.name}}</a>
       </div>
     </div>
     <div class="container-button-back my-4">

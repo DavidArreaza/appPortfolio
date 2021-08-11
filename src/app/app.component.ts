@@ -24,7 +24,7 @@ export class AppComponent implements OnInit{
   faArrowLeft = faArrowLeft;
   icons = [
     {icon : faEnvelope, name : "E-mail", email: 'darreazagil@gmail.com'},
-    {icon : faLinkedinIn, name : "LinkedinIn", url : 'www.linkedin.com/in/davidarreazagil'},
+    {icon : faLinkedinIn, name : "LinkedinIn", url : 'https://www.linkedin.com/in/davidarreazagil/'},
     {icon : faGithub, name : 'GitHub', url : 'https://github.com/DavidArreaza'},
     {icon : faFileCode, name : 'Currículum', url : 'https://drive.google.com/file/d/1niH-xzjDBW1IBYdqdbCDrY7KTzV3r2zS/view?usp=sharing'}];
 
