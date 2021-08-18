@@ -33,6 +33,18 @@ p{
   font-size: 70px;
 }
 
+@media (max-width: 900px){
+  .name{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 450px){
+  .name{
+    font-size: 30px;
+  }
+}
+
 .puesto{
   margin-top: 50px;
   font-family: 'Bebas Neue', cursive;
@@ -53,6 +65,25 @@ img{
 
 .card{
   width: 400px;
+}
+
+@media (max-width: 900px){
+  .card{
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px){
+  .card{
+    width: 250px;
+  }
+}
+
+@media (max-width: 360px){
+  .card{
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .card-img-overlay:hover{
@@ -109,8 +140,14 @@ img{
   font-size: 30px;
 }
 
-.margin{
+.btnmargin{
   margin-left: 95%;
+}
+
+@media (max-width: 450px){
+  .btnmargin{
+    margin-left: 90%;
+  }
 }
 
 .cont{

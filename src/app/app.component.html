@@ -12,11 +12,11 @@
   <mat-step>
     <ng-template matStepLabel state="about me"><p>About me</p></ng-template>
     <div class="row text-center">
-      <div class="col-12 my-4">
+      <div class="col-lg-12 col-sm-12 my-4">
         <p class="name my-4">{{ nombre }}</p>
         <p class="puesto">{{ puesto }}</p>
         <div class="row justify-content-center my-4">
-          <div class="col-6">
+          <div class="col-lg-8 col-sm-12">
             <p class="description px-2 py-2">
               {{ description }}
             </p>
@@ -24,14 +24,14 @@
         </div>
       </div>
     </div>
-    <button class="margin" mat-button matStepperNext><fa-icon class="btnnext" [icon]="faArrowRight"></fa-icon></button>
+    <button class="btnmargin btnnext" mat-button matStepperNext><fa-icon [icon]="faArrowRight"></fa-icon></button>
   </mat-step>
 
   <mat-step>
     <ng-template matStepLabel state="projects"><p>Projects</p></ng-template>
     <div>
       <div class="row">
-        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12  my-4" *ngFor="let project of Projects">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 my-4" *ngFor="let project of Projects">
           <div class="card" >
             <img src={{project.img}} class="card-img" alt="img" />
             <div class="card-img-overlay">
@@ -71,9 +71,9 @@
   </mat-step>
 </mat-stepper>
 
-<footer class="cont border-top border-warning bg-dark text-center">
+<!--<footer class="cont border-top border-warning bg-dark text-center">
   <div class="copyright text-center p-3">
     © 2021 Copyright:
     <a href="https://github.com/DavidArreaza">David Arreaza Gil</a>
   </div>
-</footer>
+</footer>-->
